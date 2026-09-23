@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+  <title>hola</title>
+  <link rel="stylesheet" href="hoja.css">
+</head>
+
+<body>
+  <div id="instrucciones">llena tus datos:</div>
+  <form action="002.html" method="post" enctype="multipart/form-data">
+    nombre <input type="text" ><br>
+    <label for='clave'>clave</label>
+    <input type='password' name='clave' id='clave' ><br>
+    <label for='estudias:'>estudias:</label>
+    <input type='checkbox' id='estudias' value="si"><br>
+    <span id="escolar" style="display: none;" onclick="checar();">
+    <label for='ncontrol'>ncontrol</label>
+    <input type='text' name='ncontrol' id='ncontrol' ><br>
+    <label for='grado'>grado</label>
+    <input type='text' name='grado' id='grado' ><br>
+    <label for='grupo'>grupo</label>
+    <input type='text' name='grupo' id='grupo' ><br>
+    </span>
+    <label for='direccion'>direccion</label>
+    <input type='text' name='direccion' id='direccion' ><br>
+    <label for='edad'>Edad</label>
+    <input type='text' name='edad' id='edad' ><br>
+    <input type="time" name="txttime">
+    <input type="submit" value="Enviar">
+    <input type="button" value="saludar " onclick="alert('Hola');">
+    <input type="button" value="rellenar" onclick="mostrar();">
+  </form>
+  <script>
+    function mostrar(){
+      nombre = prompt('hola como te llamas');
+      eldiv = document.getElementById("instrucciones");
+      eldiv.innerText = "Hola, " + nombre + ' llena tus datos:'  ;
+    }
+
+    function checar(){
+      estudia = document.getElementById("instrucciones");
+
+
+    }
+  </script>
+
+</body>
+
+</html>
